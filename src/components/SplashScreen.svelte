@@ -21,7 +21,7 @@
     height: 100dvh;
     width: 100dvw;
   }
-  .loading {
+  /* .loading {
     margin: 0;
     padding: 0;
   position: absolute;
@@ -30,7 +30,7 @@
   left: 50%;
   bottom: 5%;
   transform: translate(-50%, -50%);
-  }
+  } */
 
 </style>
 

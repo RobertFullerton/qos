@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
 
   import SplashScreen from './components/SplashScreen.svelte';
+  // @ts-ignore
   import Scorekeeper from './components/Scorekeeper.svelte';
 
   let showSplashScreen = true;

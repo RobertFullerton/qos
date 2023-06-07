@@ -1,4 +1,7 @@
 <script>
+// @ts-nocheck
+
+
     import { onMount } from 'svelte';
   
     import SplashScreen from '../components/SplashScreen.svelte';
