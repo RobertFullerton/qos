@@ -3,6 +3,7 @@ import image from '../assets/img/SplashDesignFinal.jpg'
   import { createEventDispatcher } from 'svelte';
 
   let imageUrl = image;
+  let year = new Date().getFullYear();
 
   // export let duration = 2000; // Duration in milliseconds
 
@@ -21,20 +22,20 @@ import image from '../assets/img/SplashDesignFinal.jpg'
     height: 100dvh;
     width: 100dvw;
   }
-  /* .loading {
+  .loading {
     margin: 0;
     padding: 0;
   position: absolute;
-  font-size: 1.5rem;
+  font-size: .75rem;
   font-weight: bold;
   left: 50%;
   bottom: 5%;
   transform: translate(-50%, -50%);
-  } */
+  }
 
 </style>
 
 
   <img src={imageUrl} alt="background" class="img" />
-  <!-- <p aria-busy="true" class="loading">Loading ... </p> -->
+  <p class="loading"> QOS &copy; {year} </p>
 

@@ -10,7 +10,7 @@
   onMount(() => {
     setTimeout(() => {
       showSplashScreen = false;
-    }, 4000); // Sets the duration of the splash screen
+    }, 2000); // Sets the duration of the splash screen
   });
 	
 </script>
