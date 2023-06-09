@@ -1,10 +1,10 @@
 <script>
-
+import image from '../assets/img/SplashDesignFinal.jpg'
   import { createEventDispatcher } from 'svelte';
 
-  let imageUrl = 'src/assets/img/Splash Design Final New.jpg' 
+  let imageUrl = image;
 
-  export let duration = 5000; // Duration in milliseconds
+  export let duration = 4000; // Duration in milliseconds
 
   const dispatch = createEventDispatcher();
 
@@ -34,8 +34,7 @@
 
 </style>
 
-<figure>
+
   <img src={imageUrl} alt="background" class="img" />
   <!-- <p aria-busy="true" class="loading">Loading ... </p> -->
-</figure>
 
