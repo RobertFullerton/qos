@@ -165,9 +165,12 @@
             <td class="totalScore" key={playerIndex}>{totalScore}</td>
           {/each}
         </tr>
-        <div>
-          <button on:click={addRow}>Next Hand</button>
-      </div>
+        <tr>
+          <td>
+             <button on:click={addRow}>Next Hand</button>
+          </td>
+        </tr>
+        
       </tbody>
     </table>
   </section>
@@ -177,14 +180,16 @@
         score={winnerData.score}
         handsPlayed={winnerData.handsPlayed}
       />
-    {/if}
+      <Leaderboard {leaderboardData} />
+      <div class="newGameButton">
+        <NewGameButton {resetGame} />
+      </div>
+      {/if}
   
     
-    <Leaderboard {leaderboardData} />
+    <!-- <Leaderboard {leaderboardData} /> -->
   
-    <div class="newGameButton">
-      <NewGameButton {resetGame} />
-    </div>
+   
   </main>
   
   {/if}
