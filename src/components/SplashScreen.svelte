@@ -4,14 +4,14 @@ import image from '../assets/img/SplashDesignFinal.jpg'
 
   let imageUrl = image;
 
-  export let duration = 4000; // Duration in milliseconds
+  // export let duration = 2000; // Duration in milliseconds
 
-  const dispatch = createEventDispatcher();
+  // const dispatch = createEventDispatcher();
 
 
-  setTimeout(() => {
-    dispatch('splash-screen-complete');
-  }, duration);
+  // setTimeout(() => {
+  //   dispatch('splash-screen-complete');
+  // }, duration);
 </script>
 
 <style>
